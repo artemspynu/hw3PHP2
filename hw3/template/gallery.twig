@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<div id="gallery">
+    {% for images in gallery %}
+        <div class="container">
+            <div class="gallery">
+                <a href="images/{{ images.large }}">
+                    <img src="images/{{ images.small }}" alt="">
+                </a>
+            </div>
+        </div>
+    {% endfor %}
+</div>
+</body>
+</html>
